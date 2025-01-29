@@ -65,45 +65,22 @@ header li {
     font-family: 'Georgia Black';
 }
 
-/* Configuring all the features of what will be shown in the products section, adjusting the size of images, texts, colors, margins, etc. */
-#container-products {
+/* Configuring all the features of what will be shown in the history section. */
+#container-history {
     display: grid;
-    padding-top: 5vh;
+    padding-top: 1vh;
     justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     background-color: var(--accent-1);
+    height: 30vh;
 }
 
-.product img {
-    height: 200px;
-}
-
-.product h3 {
-    text-align: center;
-}
-
-#highlighted-product {
-    display: flex;
-    margin-top: 0.05vh;
-    margin-left: 0.05vw;
+/* Configuring all the features of what will be shown in the adventure section. */
+#container-Adventure {
+    display: grid;
+    padding-top: 1vh;
+    justify-items: center;
     background-color: var(--accent-2);
-}
-
-#highlighted-product-text {
-    position: absolute;
-    text-wrap: wrap;
-    height: 20vh;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    transform: translate(90%, 40%);
-    background-color: var(--secondary);
-}
-
-#highlighted-product-text h1 {
-    font-family: 'Georgia 400';
+    height: 30vh;
 }
 
 /* Configuring what will be shown in the page footer */
