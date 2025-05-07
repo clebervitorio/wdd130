@@ -51,7 +51,7 @@ main img{
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: rgb(203, 201, 201);
+    box-shadow: rgb(203, 201, 201,);
     float: right;
     margin:0 0 1rem 1rem;
 
@@ -73,7 +73,7 @@ aside img {
     border: 1px #000;
 }
 p{ 
-    padding:(0 2px);
+    padding:2px;
 }
 footer{
     margin-top: 1em;
@@ -104,7 +104,7 @@ aside h2 {
 }
 
  footer , .grid , head{
-    max-width: 840xp;
+    max-width: 840px;
     margin: 0 auto;
  }  
 
