@@ -15,30 +15,20 @@ header, .grid, footer{
 }
 
 nav{
-    background-color: steelblue;
+    background-color: #164e70;
     padding: 10px;
     display: flex;
-   justify-content: space-evenly;
-   align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-nav a {
+nav a{
     color: white;
     display: block;
-    padding: 10px;
+    padding: 20px;
     display: block;
+    padding: 5px;
     text-decoration: none;
-    font-size: 1.5rem;
-    
-}
-
-h1{
-    color: steelblue;
-    margin: 6px;
-    padding: 2px;
-    border-bottom: 2px solid black;
-    font-size:x-large;
-
 }
 
 .grid{
@@ -50,96 +40,68 @@ h1{
     ;
 }
 
-img {
-    width: 500px;
-    height : auto;
-    border : 1px solid steelblue;
-    padding : 2px;
+h1{
+    color: #164e70;
+    border-bottom: 2px solid #164e70;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    border: 1px solid #164e70;
     box-shadow: 0 0 30px gray;
 }
 
 p{
     padding: 10px;
-    
 }
-main {
-    max-width: 840px; 
-    grid-area: main; 
+
+main{
+    max-width: 840px;
+    grid-area: main;
 }
+
+aside{
+    width: 20rem;
+    text-align: center;
+    position: relative;
+    grid-area: aside;
+}
+
+aside h2{
+    position: absolute;
+    top: 20px;
+    left: 122px;
+
+}
+
+aside img{
+    width: 200px;
+    height: auto;
+}
+
 main img{
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
     float: right;
-    margin:0 0 1rem 1rem;
-
 }
 
-aside {
-    width: 20rem;
-    margin: 2em;
-    border: 1px solid rgba(158, 157, 157, 0.2);
-    padding: 1em;
-    background-color: #b6b5b5;
-    color: #414040; 
-    text-align: center;
+p{
+    padding: 0;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-    border: 1px #000;
-}
-p{ 
-    padding: 2px;
-}
 footer{
-    margin-top: 1em;
+    margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-}  
-
-/* Class Selectors */
-
-.box {
-	margin: 1rem ;
-	border: 1rem ;
-	padding: 1rem ;
-	background-color:#ddd; ;
-    clear:both;
-    position: relative;
+    grid-area: footer;
 }
 
-aside h2 {
-    position: absolute;
-    top: 55px;
-    left: 100px;
-     
-}
-    
-.indent {
-    margin-left: 2em; 
-}
-
- footer , .grid , head{
-    max-width: 840px;
-    margin: 0 auto;
- }  
-
- .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
- }
- 
- main {
-    grid-column: 2/3;
+/*Class Selectors*/
+.box{
     margin: 1rem;
- }
-
- aside { 
-    grid-column: 1/2;
-    grid-row: 1/3;
-    position: relative;
- }
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
