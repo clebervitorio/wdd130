@@ -1,8 +1,18 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}   
+:root {
+    --heading-color:red;
+    --standard-unit:0;
+}
+
+*{
+    margin: var(--standard-unit);
+    padding: var(--standard-unit);
+    box-sizing: border-box;
+}
+
+header, .grid, footer{
+    max-width: 840px;
+    margin: var(--standard-unit) auto;
+}
 
 nav{
     background-color: steelblue;
@@ -16,11 +26,12 @@ nav a {
     color: white;
     display: block;
     padding: 10px;
-    display: inline;
+    display: block;
     text-decoration: none;
     font-size: 1.5rem;
     
 }
+
 h1{
     color: steelblue;
     margin: 6px;
@@ -28,6 +39,15 @@ h1{
     border-bottom: 2px solid black;
     font-size:x-large;
 
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "aside main"
+        "footer footer"
+    ;
 }
 
 img {
@@ -43,8 +63,8 @@ p{
     
 }
 main {
-    max-width: 650px; 
-    width: 100%; 
+    max-width: 840px; 
+    grid-area: main; 
 }
 main img{
     width: 150px;
@@ -68,7 +88,7 @@ aside {
 }
 
 aside img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border: 1px #000;
 }
@@ -104,7 +124,7 @@ aside h2 {
 }
 
  footer , .grid , head{
-    max-width: 1800px;
+    max-width: 840px;
     margin: 0 auto;
  }  
 
