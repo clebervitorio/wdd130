@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header .logo {
+  background: rgb(60, 60, 14);
+  text-align: center;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav a {
+  text-decoration: none;
+  color: olive;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+header nav a:hover {
+  border-bottom: 2px solid olive;
+}
+
+/* Banner Section */
+#banner-box {
+  background: url(https://images.unsplash.com/photo-1600274739081-e7e26300c88f?q=80&w=2013&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: bold;
+  gap: 20px;
+  padding: 200px;
+  margin: 30px 0;
+  font-family: serif;
+}
+
+#banner-box h2 {
+  font-size: 7rem;
+}
+#banner-box p {
+  font-size: 1.5rem;
+}
+
+/* Gallery Section */
+#photo__gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+#photo_gallery img {
+  width: 200px;
+  height: 200px;
+}
+
+#photo__gallery h3 {
+  font-size: 1.5rem;
+  padding: 10px 0;
+}
+#photo__gallery p {
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+
+/* footer Section */
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+  background: rgb(60, 60, 14);
+}
+footer .footer_nav p {
+  font-size: 2rem;
+  margin: 30px 0;
+  color: #fff;
+}
+footer .footer_nav li {
+  list-style: none;
+}
+footer .footer_nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 20px;
+  line-height: 30px;
+}
+
+footer .socials ul {
+  display: flex;
+}
