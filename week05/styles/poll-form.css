@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #20201a;
+  --secondary-color: #907b60;
+  --accent1-color: #c1b6ae;
+  --accent2-color: #474130;
+  --accent3-color: #e9d9c7;
+  --heading-font: "Raleway", serif;
+  --text-font: "Inter", serif;
+}
+
+body {
+  font-family: var(--text-font);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+header {
+  margin: 0 auto;
+  width: 650px;
+}
+
+h1 {
+  margin: 1rem;
+  font-size: 1.5em;
+  text-align: center;
+}
+/* Form Section */
+form {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 0.5rem;
+  background-color: var(--accent1-color);
+  color: #fff;
+  display: grid;
+}
+
+.form-item {
+  display: grid;
+  align-items: center;
+}
+.column1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+fieldset {
+  display: grid;
+  align-items: center;
+  grid-gap: 0.5rem;
+  margin: 2rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+legend {
+  padding: 0.5rem;
+  color: var(--primary-color);
+  font-size: 1.3em;
+  font-weight: bold;
+}
+label,
+input,
+button,
+select,
+textarea {
+  font-family: var(--heading-font);
+}
+label {
+  text-align: right;
+  padding-right: 1rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  background-color: var(--primary-color);
+  margin: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent2-color);
+}
+
+footer {
+  margin: 2rem auto 0;
+  width: 650px;
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--primary-color);
+  border-top: 1px solid #ccc;
+}
